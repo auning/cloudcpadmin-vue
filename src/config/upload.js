@@ -1,6 +1,6 @@
 export default {
   storage: {
-    LOCAL: 'http://127.0.0.1:9501',
+    LOCAL: 'http://192.168.10.5:9501',
     OSS: '',
     COS: '',
     QINIU: ''
