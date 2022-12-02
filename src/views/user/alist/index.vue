@@ -97,7 +97,7 @@ const columns = reactive([
     hide: true
   },
   {
-    title: "密码",
+    title: "密码111",
     dataIndex: "password",
     formType: "input",
     search: true
@@ -225,5 +225,49 @@ const columns = reactive([
     hide: true
   }
 ])
+
+
+// 组件的字段设置
+const columnsOptions = reactive([
+  {
+    title: 'Name',
+    dataIndex: 'name',
+    fixed: 'left',
+    width: 140,
+  }, {
+    title: 'User Info',
+    children: [{
+      title: 'Birthday',
+      dataIndex: 'birthday'
+    }, {
+      title: 'Address',
+      children: [{
+        title: 'City',
+        dataIndex: 'city'
+      }, {
+        title: 'Road',
+        dataIndex: 'road'
+      }, {
+        title: 'No.',
+        dataIndex: 'no'
+      }]
+    }]
+  }, {
+    title: 'Information',
+    children: [{
+      title: 'Email',
+      dataIndex: 'email',
+    }, {
+      title: 'Phone',
+      dataIndex: 'phone',
+    }]
+  }, {
+    title: 'Salary',
+    dataIndex: 'salary',
+    fixed: 'right',
+    width: 120
+  }
+])
+
 </script>
 <script> export default { name: 'user:alist' } </script>
