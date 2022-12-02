@@ -227,8 +227,8 @@ const columns = reactive([
 ])
 
 
-// 组件的字段设置
-const columnsOptions = reactive([
+// 组件的字段设置columnsOptions
+const columns = reactive([
   {
     title: 'Name',
     dataIndex: 'name',
