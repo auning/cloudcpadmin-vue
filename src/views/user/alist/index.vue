@@ -78,196 +78,152 @@ const crud = reactive({
     auth: ['user:alist:export']
   }
 })
-//
-// const columns = reactive([
-//   {
-//     title: "用户ID，主键",
-//     dataIndex: "id",
-//     formType: "input",
-//     addDisplay: false,
-//     editDisplay: false,
-//     hide: true
-//   },
-//   {
-//     title: "用户名",
-//     dataIndex: "username",
-//     formType: "input",
-//     addDisplay: false,
-//     editDisplay: false,
-//     hide: true
-//   },
-//   {
-//     title: "密码111",
-//     dataIndex: "password",
-//     formType: "input",
-//     search: true
-//   },
-//   {
-//     title: "用户类型：(100系统用户)",
-//     dataIndex: "user_type",
-//     formType: "input",
-//     search: true
-//   },
-//   {
-//     title: "用户昵称",
-//     dataIndex: "nickname",
-//     formType: "input",
-//     search: true
-//   },
-//   {
-//     title: "手机",
-//     dataIndex: "phone",
-//     formType: "input",
-//     search: true
-//   },
-//   {
-//     title: "用户邮箱",
-//     dataIndex: "email",
-//     formType: "input",
-//     search: true
-//   },
-//   {
-//     title: "用户头像",
-//     dataIndex: "avatar",
-//     formType: "input",
-//     search: true
-//   },
-//   {
-//     title: "个人签名",
-//     dataIndex: "signed",
-//     formType: "input",
-//     search: true
-//   },
-//   {
-//     title: "后台首页类型",
-//     dataIndex: "dashboard",
-//     formType: "input",
-//     search: true
-//   },
-//   {
-//     title: "部门ID",
-//     dataIndex: "dept_id",
-//     formType: "input",
-//     addDisplay: false,
-//     editDisplay: false,
-//     hide: true
-//   },
-//   {
-//     title: "状态 (1正常 2停用)",
-//     dataIndex: "status",
-//     formType: "input",
-//     search: true
-//   },
-//   {
-//     title: "最后登陆IP",
-//     dataIndex: "login_ip",
-//     formType: "input",
-//     search: true
-//   },
-//   {
-//     title: "最后登陆时间",
-//     dataIndex: "login_time",
-//     formType: "input",
-//     search: true
-//   },
-//   {
-//     title: "后台设置数据",
-//     dataIndex: "backend_setting",
-//     formType: "input",
-//     search: true
-//   },
-//   {
-//     title: "创建者",
-//     dataIndex: "created_by",
-//     formType: "input",
-//     addDisplay: false,
-//     editDisplay: false,
-//     hide: true
-//   },
-//   {
-//     title: "更新者",
-//     dataIndex: "updated_by",
-//     formType: "input",
-//     addDisplay: false,
-//     editDisplay: false,
-//     hide: true
-//   },
-//   {
-//     title: "创建时间",
-//     dataIndex: "created_at",
-//     formType: "input",
-//     addDisplay: false,
-//     editDisplay: false,
-//     hide: true
-//   },
-//   {
-//     title: "更新时间",
-//     dataIndex: "updated_at",
-//     formType: "input",
-//     addDisplay: false,
-//     editDisplay: false,
-//     hide: true
-//   },
-//   {
-//     title: "删除时间",
-//     dataIndex: "deleted_at",
-//     formType: "input",
-//     addDisplay: false,
-//     editDisplay: false,
-//     hide: true
-//   },
-//   {
-//     title: "备注",
-//     dataIndex: "remark",
-//     formType: "input",
-//     addDisplay: false,
-//     editDisplay: false,
-//     hide: true
-//   }
-// ])
 
-
-// 组件的字段设置columnsOptions
 const columns = reactive([
   {
-    title: 'Name',
-    dataIndex: 'name',
-    fixed: 'left',
-    width: 140,
-  }, {
-    title: 'User Info',
-    children: [{
-      title: 'Birthday',
-      dataIndex: 'birthday'
-    }, {
-      title: 'Address',
-      children: [{
-        title: 'City',
-        dataIndex: 'city'
-      }, {
-        title: 'Road',
-        dataIndex: 'road'
-      }, {
-        title: 'No.',
-        dataIndex: 'no'
-      }]
-    }]
-  }, {
-    title: 'Information',
-    children: [{
-      title: 'Email',
-      dataIndex: 'email',
-    }, {
-      title: 'Phone',
-      dataIndex: 'phone',
-    }]
-  }, {
-    title: 'Salary',
-    dataIndex: 'salary',
-    fixed: 'right',
-    width: 120
+    title: "用户ID，主键",
+    dataIndex: "id",
+    formType: "input",
+    addDisplay: false,
+    editDisplay: false,
+    hide: true
+  },
+  {
+    title: "用户名",
+    dataIndex: "username",
+    formType: "input",
+    addDisplay: false,
+    editDisplay: false,
+    hide: true
+  },
+  {
+    title: "密码",
+    dataIndex: "password",
+    formType: "input",
+    search: true
+  },
+  {
+    title: "用户类型：(100系统用户)",
+    dataIndex: "user_type",
+    formType: "input",
+    search: true
+  },
+  {
+    title: "用户昵称",
+    dataIndex: "nickname",
+    formType: "input",
+    search: true
+  },
+  {
+    title: "手机",
+    dataIndex: "phone",
+    formType: "input",
+    search: true
+  },
+  {
+    title: "用户邮箱",
+    dataIndex: "email",
+    formType: "input",
+    search: true
+  },
+  {
+    title: "用户头像",
+    dataIndex: "avatar",
+    formType: "input",
+    search: true
+  },
+  {
+    title: "个人签名",
+    dataIndex: "signed",
+    formType: "input",
+    search: true
+  },
+  {
+    title: "后台首页类型",
+    dataIndex: "dashboard",
+    formType: "input",
+    search: true
+  },
+  {
+    title: "部门ID",
+    dataIndex: "dept_id",
+    formType: "input",
+    addDisplay: false,
+    editDisplay: false,
+    hide: true
+  },
+  {
+    title: "状态 (1正常 2停用)",
+    dataIndex: "status",
+    formType: "input",
+    search: true
+  },
+  {
+    title: "最后登陆IP",
+    dataIndex: "login_ip",
+    formType: "input",
+    search: true
+  },
+  {
+    title: "最后登陆时间",
+    dataIndex: "login_time",
+    formType: "input",
+    search: true
+  },
+  {
+    title: "后台设置数据",
+    dataIndex: "backend_setting",
+    formType: "input",
+    search: true
+  },
+  {
+    title: "创建者",
+    dataIndex: "created_by",
+    formType: "input",
+    addDisplay: false,
+    editDisplay: false,
+    hide: true
+  },
+  {
+    title: "更新者",
+    dataIndex: "updated_by",
+    formType: "input",
+    addDisplay: false,
+    editDisplay: false,
+    hide: true
+  },
+  {
+    title: "创建时间",
+    dataIndex: "created_at",
+    formType: "input",
+    addDisplay: false,
+    editDisplay: false,
+    hide: true
+  },
+  {
+    title: "更新时间",
+    dataIndex: "updated_at",
+    formType: "input",
+    addDisplay: false,
+    editDisplay: false,
+    hide: true
+  },
+  {
+    title: "删除时间",
+    dataIndex: "deleted_at",
+    formType: "input",
+    addDisplay: false,
+    editDisplay: false,
+    hide: true
+  },
+  {
+    title: "备注",
+    dataIndex: "remark",
+    formType: "input",
+    addDisplay: false,
+    editDisplay: false,
+    hide: true
   }
 ])
-
 </script>
 <script> export default { name: 'user:alist' } </script>
