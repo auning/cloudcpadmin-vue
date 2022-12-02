@@ -40,7 +40,7 @@ const crud = reactive({
     layout: 'auto',
     cols: 1,
     viewType: 'modal',
-    width: 600
+    width: 1200
   },
   api: userAlist.getList,
   recycleApi: userAlist.getRecycleList,
